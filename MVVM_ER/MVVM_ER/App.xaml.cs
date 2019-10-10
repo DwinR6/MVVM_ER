@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVVM_ER.View;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,8 +11,9 @@ namespace MVVM_ER
         public App()
         {
             InitializeComponent();
+            var inicio = new NavigationPage(new InicioView());
 
-            MainPage = new MainPage();
+            MainPage = inicio;
         }
 
         protected override void OnStart()
