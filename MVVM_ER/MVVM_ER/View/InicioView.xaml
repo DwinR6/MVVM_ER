@@ -7,13 +7,12 @@
         <Ed:InicioViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Entry Text="Nombre Completo" />
-            <Label Text="{Binding persona.Nombre}" />
-            <Label Text="{Binding persona.Curso}" />
+        <StackLayout Padding="20">
+            <Label Text="{Binding Persona.Nombre}" />
+            <Label Text="{Binding Persona.Curso}" />
             <StackLayout Orientation="Horizontal">
                 <Label Text="Numero de Cohorte: " />
-                <Label Text="{Binding persona.Cohorte}" />
+                <Label Text="{Binding Persona.Cohorte}" />
             </StackLayout>
             <StackLayout>
                 <Button Text="Ir a pagina de operacione"  Command="{Binding NavegarCommand}"/>

@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns: ed
+             xmlns:Ed="clr-namespace:MVVM_ER.ViewModel"
              x:Class="MVVM_ER.View.OperacionesView">
+    <ContentPage.BindingContext>
+        <Ed:OperacionesViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Entry Placeholder="Ingrese numero 1" Text="{Binding PrimerNumero}"/>
-            <Entry Placeholder="Ingrese el segundo numero" Text="{Binding SegundoNumero}" />
+        <StackLayout Padding="10">
+            <Entry Placeholder="Ingrese numero 1" Text="{Binding Numero1}"/>
+            <Entry Placeholder="Ingrese el segundo numero" Text="{Binding Numero2}" />
 
-            <Button Text="Sumar los numeros" Command="{Binding OperarCommand}"/>
-            <Button Text="Sumar los numeros Async" Command="{Binding OperacionesAsyncCommand}"/>
+            <Button Text="Sumar" Command="{Binding OperarCommand}"/>
+            <Button Text="Sumar Async" Command="{Binding OperarAsyncCommand}"/>
 
             <Label Text="{Binding Resultado}"/>
         </StackLayout>

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_ER.Android", "MVVM_ER\MVVM_ER.Android\MVVM_ER.Android.csproj", "{7933535F-9567-4F30-8574-3E7730C2AACA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM_ER", "MVVM_ER\MVVM_ER\MVVM_ER.csproj", "{F855C03C-A885-4B98-8639-ED82FAEAD9FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVVM_ER", "MVVM_ER\MVVM_ER\MVVM_ER.csproj", "{F855C03C-A885-4B98-8639-ED82FAEAD9FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

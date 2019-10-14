@@ -9,13 +9,14 @@ namespace MVVM_ER.ViewModel
 {
     public class InicioViewModel
     {
-        public PersonaModel persona { get; set; }
+        public PersonaModel Persona { get; set; }
         public Command NavegarCommand { get; set; }
         public InicioViewModel()
         {
-            persona.Nombre = "Edwin Noel Ramos Bonilla";
-            persona.Curso = "Desarrollo de Mobile Apps con Xamarin";
-            persona.Cohorte = 6;
+            Persona = new PersonaModel();
+            Persona.Nombre = "Edwin Noel Ramos Bonilla";
+            Persona.Curso = "Desarrollo de Mobile Apps con Xamarin";
+            Persona.Cohorte = 6;
             NavegarCommand = new Command(IrAPagina);
         }
         private void IrAPagina()
